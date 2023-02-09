@@ -7,10 +7,10 @@
 
 .cart{
 
-    width: 120px;
-    height: 80px;
+    width: 100px;
+    height: 60px;
     border-radius: 35%;
-    background-image: linear-gradient( 135deg, #FDEB71 10%, #ad9d32 100%);
+    background-image: linear-gradient( 135deg, #dfd385 10%, #dac439 100%);
     border-color: white;
     border: 0px;
     
