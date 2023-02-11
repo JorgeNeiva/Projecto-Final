@@ -1,0 +1,18 @@
+.meal-main{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.meal-box{
+    width: 200px;
+    height: 500px;
+}
+
+.meal{
+    display: flex;
+    flex-direction: column;
+}
+
+.meal-img{
+    width: 10px;
+}
