@@ -1,18 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
 import MainBar from './components/Navbar/Navbar';
 import FoodList from './components/productList/ProductList.jsx';
-import { BrowserRouter, Router } from 'react-router-dom';
+import {Routes, Route} from "react-router-dom"
+import Home from './pages/Home';
+import FoodDetails from './pages/Details';
+
 
 function App(){
   return(
-    <h1>
+    
+    <div>
       <MainBar></MainBar>
-      <FoodList></FoodList>
-    </h1>
+      <Routes>
+         <Route exact path = "/" element = {<Home/>} />
+         <Route path = "/product-list" element = {<FoodList/>}/>
+         <Route path = "/food_details" element= {<FoodDetails/>}/>
+      </Routes>
+    
+    </div>
+   
+    
 
   )
 }
-
 
 export default App
