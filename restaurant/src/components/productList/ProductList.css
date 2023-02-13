@@ -1,14 +1,14 @@
 .meal-main{
     display: flex;
     flex-flow: row wrap;
-    margin: 50px;
+    margin: 25px;
     justify-content: space-around;
 }
 
 .meal-box{
     width: 250px;
     height: 500px;
-    margin: 50px;
+    margin: 57px;
     display: block;
     align-items: center;
     background-color: #F5B041;

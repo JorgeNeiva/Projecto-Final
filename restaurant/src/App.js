@@ -4,6 +4,7 @@ import FoodList from './components/productList/ProductList.jsx';
 import {Routes, Route} from "react-router-dom"
 import Home from './pages/Home';
 import FoodDetails from './pages/Details';
+import Footer from './components/Footer';
 
 
 function App(){
@@ -16,6 +17,7 @@ function App(){
          <Route path = "/product-list" element = {<FoodList/>}/>
          <Route path = "/food_details" element= {<FoodDetails/>}/>
       </Routes>
+      <Footer></Footer>
     
     </div>
    
