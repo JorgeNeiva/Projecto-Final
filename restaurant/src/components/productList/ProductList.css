@@ -71,3 +71,13 @@ p{
     transition: transform 0.2s ease-in-out;
 }
 
+.search-bar{
+
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  #F5B041 10%, #CA6F1E 100%);
+    width: 15rem;
+    height: 2rem;
+    opacity: 85%;
+    border-color: black;
+    color: black;
+    
+}

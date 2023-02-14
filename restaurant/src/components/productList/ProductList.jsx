@@ -5,7 +5,9 @@ import Pizza from '../../assets/images/Pizza.png'
 
 const FoodList = () => {
     return(
-        <ul  className = 'meal-main'>
+        <div>
+            <input className="search-bar" type="text" placeholder="Search..." />
+            <ul  className = 'meal-main'>
                 <li className='meal-box' >
                     <div >
                         <div className='meal'>
@@ -90,7 +92,8 @@ const FoodList = () => {
                          </div>
                     </div>
                 </li>
-        </ul>
+            </ul>
+        </div>
     )
 }
 

@@ -1,11 +1,14 @@
-
 import './Navbar.css'
+import { Link } from "react-router-dom";
+
+
+
 
 const MainBar = () => {
     return(
         <nav className="nav-bar">
-            <input className="my-home" type="submit" value='Home' />
-            <input className="search-bar" type="text" placeholder="Search..." />
+            <button className="my-home" >Home</button>
+            <button className="meals">Meals</button>
             <input className="cart" type="submit" value="Order" />
         </nav>
             
