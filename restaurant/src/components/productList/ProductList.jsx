@@ -2,8 +2,21 @@
 import './ProductList.css'
 import Picanha from '../../assets/images/picanha.png'
 import Pizza from '../../assets/images/Pizza.png'
+import { useNavigate } from 'react-router-dom'
 
-const FoodList = () => {
+function FoodList(){
+    const navigate = useNavigate();
+
+    function clickDetails(){
+        navigate ('/food_details');
+    }
+
+    function clickAdd(){
+        navigate ('/cart')
+    }
+
+
+
     return(
         <div>
             <input className="search-bar" type="text" placeholder="Search..." />
@@ -17,8 +30,9 @@ const FoodList = () => {
                              <h1>Picanha</h1>
                              <h2>Deliciosa Picanha Argentina</h2>
                              <p>15.90€</p>
-                             <input className="more-info" type="submit" value="Detalhe" />
-                             <input className="add-cart" type="submit" value="Encomendar" />
+                             <button className="more-info" onClick={clickDetails}>Detalhe</button>
+                             <button className="add-cart" onClick={clickAdd}> Adicionar </button>
+                           
                          </div>
                     </div>
                 </li>
@@ -31,8 +45,8 @@ const FoodList = () => {
                              <h1>Pizza</h1>
                              <h2>A nossa Pizza no forno</h2>
                              <p>12.90€</p>
-                             <input className="more-info" type="submit" value="Detalhe" />
-                             <input className="add-cart" type="submit" value="Encomendar" />
+                             <button className="more-info" onClick={clickDetails}>Detalhe</button>
+                             <button className="add-cart" onClick={clickAdd}> Adicionar </button>
                          </div>
                     </div>
                 </li>
@@ -45,8 +59,8 @@ const FoodList = () => {
                              <h1>Picanha</h1>
                              <h2>Deliciosa Picanha Argentina</h2>
                              <p>15.90€</p>
-                             <input className="more-info" type="submit" value="Detalhe" />
-                             <input className="add-cart" type="submit" value="Encomendar" />
+                             <button className="more-info" onClick={clickDetails}>Detalhe</button>
+                             <button className="add-cart" onClick={clickAdd}> Adicionar </button>
                          </div>
                     </div>
                 </li>
@@ -59,8 +73,8 @@ const FoodList = () => {
                              <h1>Pizza</h1>
                              <h2>A nossa Pizza no forno</h2>
                              <p>12.90€</p>
-                             <input className="more-info" type="submit" value="Detalhe" />
-                             <input className="add-cart" type="submit" value="Encomendar" />
+                             <button className="more-info" onClick={clickDetails}>Detalhe</button>
+                             <button className="add-cart" onClick={clickAdd}> Adicionar </button>
                          </div>
                     </div>
                 </li>
@@ -73,8 +87,8 @@ const FoodList = () => {
                              <h1>Picanha</h1>
                              <h2>Deliciosa Picanha Argentina</h2>
                              <p>15.90€</p>
-                             <input className="more-info" type="submit" value="Detalhe" />
-                             <input className="add-cart" type="submit" value="Encomendar" />
+                             <button className="more-info" onClick={clickDetails}>Detalhe</button>
+                             <button className="add-cart" onClick={clickAdd}> Adicionar </button>
                          </div>
                     </div>
                 </li>
@@ -87,8 +101,8 @@ const FoodList = () => {
                              <h1>Pizza</h1>
                              <h2>A nossa Pizza no forno</h2>
                              <p>12.90€</p>
-                             <input className="more-info" type="submit" value="Detalhe" />
-                             <input className="add-cart" type="submit" value="Encomendar" />
+                             <button className="more-info" onClick={clickDetails}>Detalhe</button>
+                             <button className="add-cart" onClick={clickAdd}> Adicionar </button>
                          </div>
                     </div>
                 </li>

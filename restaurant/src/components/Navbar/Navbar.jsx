@@ -1,15 +1,30 @@
 import './Navbar.css'
-import { Link } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
+
+function MainBar(){
+    const navigate = useNavigate();
+
+    function clickHome(){
+        navigate('/')
+    }
+
+    function clickMeals(){
+        navigate('/product-list')
+    }
+
+    function clickadd(){
+        navigate ('/cart')
+
+    } 
 
 
 
 
-const MainBar = () => {
     return(
         <nav className="nav-bar">
-            <button className="my-home" >Home</button>
-            <button className="meals">Meals</button>
-            <input className="cart" type="submit" value="Order" />
+            <button className="my-home" onClick={clickHome} >Home</button>
+            <button className="meals" onClick={clickMeals}>Meals</button>
+            <button className ="cart" onClick={clickadd}> Order</button>
         </nav>
             
     )

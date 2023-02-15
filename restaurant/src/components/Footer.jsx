@@ -1,9 +1,16 @@
 import './Footer.css'
+import { Navigate, useNavigate } from 'react-router-dom';
 
-const Footer = () => {
+function Footer(){
+    const navigate = useNavigate();
+
+    function clickAbout(){
+        navigate('/contacts')
+    }
+
     return(
         <footer className='footer-contain'>
-            <input className='about-button' type="submit" value="About Us" />
+            <button className='about-button' onClick={clickAbout}>About us</button>
         </footer>
     )
 }

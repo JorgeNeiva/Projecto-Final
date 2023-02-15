@@ -1,10 +1,16 @@
-import { Link } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 
-const FoodDetails = () => {
+function FoodDetails(){
+    const navigate = useNavigate();
+
+
+function productClick(){
+    navigate('/product-list');
+}
+
     return(
         <section>
         <h1>São os detalhes</h1>
-        <button><Link to='/product-list'>Back To Meals </Link></button>
         </section>
    )
 }
