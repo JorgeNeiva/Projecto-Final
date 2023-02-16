@@ -9,8 +9,10 @@ function productClick(){
 }
 
     return(
+
         <section>
-        <h1>São os detalhes</h1>
+            <input className="search-bar" type="text" placeholder="Search..." />
+            <h1>São os detalhes</h1>
         </section>
    )
 }

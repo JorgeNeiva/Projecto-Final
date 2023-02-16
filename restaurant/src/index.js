@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

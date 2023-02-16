@@ -1,0 +1,6 @@
+.your-cart{
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    background-color: #CA6F1E;
+}
