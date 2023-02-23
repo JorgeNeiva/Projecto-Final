@@ -5,7 +5,9 @@ import './Home.css'
 const Home = ()=> {
     return(
         <div className="entry-contain">
-            <h1>Welcome and Enjoy.</h1>
+            <h2>Welcome</h2>
+            <h1>WestIndia</h1>
+            <h2>Restaurant</h2>
             <img src={Restaurante} alt="Balcão de restaurante" />
         </div>
     )
