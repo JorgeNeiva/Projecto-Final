@@ -12,16 +12,16 @@ function Contacts() {
       .then(data => setWebApiContact(data));
 
   }, []);
-  let hasValue = webapicontact != null ;
+  let hasValue = webApiContact != null ;
   return(
     <div>
     { hasValue &&
       <div>
-        <h1>{webapicontact.Name}</h1>
-        <p>{webapicontact.Address}</p>
-        <p>{webapicontact.PostalCode}</p>
-        <p>{webapicontact.Phone}</p>
-        <p>{webapicontact.Email}</p>
+        <h1>{webApiContact.Name}</h1>
+        <p>{webApiContact.Address}</p>
+        <p>{webApiContact.PostalCode}</p>
+        <p>{webApiContact.Phone}</p>
+        <p>{webApiContact.Email}</p>
       </div>
     }
     </div>
