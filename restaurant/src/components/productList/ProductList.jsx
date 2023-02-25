@@ -19,7 +19,7 @@ function FoodList(){
 
     return(
         <div>
-            <input className="search-bar" type="text" placeholder="Search..." />
+            <input className="search-bar" type="text" placeholder="Procura refeições..." />
             <ul  className = 'meal-main'>
                 <li className='meal-box' >
                     <div >

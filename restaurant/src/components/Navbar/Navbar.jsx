@@ -23,8 +23,8 @@ function MainBar(){
     return(
         <nav className="nav-bar">
             <button className="my-home" onClick={clickHome} >Home</button>
-            <button className="meals" onClick={clickMeals}>Meals</button>
-            <button className ="cart" onClick={clickadd}> Order</button>
+            <button className="meals" onClick={clickMeals}>Refeições</button>
+            <button className ="cart" onClick={clickadd}> Carrinho</button>
         </nav>
             
     )
