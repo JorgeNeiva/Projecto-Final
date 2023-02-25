@@ -12,16 +12,21 @@ function Contacts() {
       .then(data => setwebapicontact(data));
 
   }, []);
-
+  let hasValue = webapicontact != null ;
   return(
     <div>
-      <h1>{webapicontact.Name}</h1>
-      <p>{webapicontact.Address}</p>
-      <p>{webapicontact.PostalCode}</p>
-      <p>{webapicontact.Phone}</p>
-      <p>{webapicontact.Email}</p>
+    { hasValue &&
+      <div>
+        <h1>{webapicontact.Name}</h1>
+        <p>{webapicontact.Address}</p>
+        <p>{webapicontact.PostalCode}</p>
+        <p>{webapicontact.Phone}</p>
+        <p>{webapicontact.Email}</p>
+      </div>
+    }
     </div>
-  )
+    
+  );
 }
 
 // <img src = {Facebook}></img>
