@@ -1,35 +1,41 @@
+
+
 {
     "meals": [
         {
             "id": 1,
             "name": "Picanha1",
-            "description": "Lorem",
-            "price": 12.33,
-            "imageUrl":"./data/picanha.png",
+            "description": "Da América do Sul ",
+            "price": "17€" ,
+            "imageUrl":"../data/picanha.png",
             "extras": [
-                {"name": "juice"},
-                {"name": "vegetables"},
-                {"name": "sweet potato"},
-                {"name": "rice"}
+                {"name": "Batata Frita"},
+                {"name": "Batata Doce"},
+                {"name": "Arroz"},
+                {"name": "Feijão"},
+                {"name": "Farofa"}
             ]
         },
         {
             "id": 2,
-            "name": "Picanha2",
-            "description": "Lorem",
-            "price": 12.33,
-            "imageUrl":"./data/picanha.png",
+            "name": "Pizza1",
+            "description": "À Balcão",
+            "price": "15€",
+            "imageUrl":"../data/Pizza.png",
             "extras": [
-                {"name": "juice"},
-                {"name": "vegetables"}
+                {"name": "Fiambre"},
+                {"name": "Tomate"},
+                {"name": "Azeitona"},
+                {"name": "Ananás"},
+                {"name": "Queijo"}
             ]
         },
         {
             "id": 3,
             "name": "Picanha3",
             "description": "Lorem",
-            "price": 12.33,
-            "imageUrl":"./data/picanha.png",
+            "price": "17€",
+            "imageUrl":"../data/picanha.png",
             "extras": [
                 {"name": "juice"}
             ]
@@ -39,42 +45,42 @@
             "name": "Picanha4",
             "description": "Lorem",
             "price": 12.33,
-            "imageUrl":"./data/picanha.png"
+            "imageUrl":"../data/picanha.png"
         },
         {
             "id": 5,
             "name": "Picanha5",
             "description": "Lorem",
             "price": 12.33,
-            "imageUrl":"./data/picanha.png"
+            "imageUrl":"../data/picanha.png"
         },
         {
             "id": 6,
             "name": "Picanha6",
             "description": "Lorem",
             "price": 12.33,
-            "imageUrl":"./data/picanha.png"
+            "imageUrl":"../data/picanha.png"
         },
         {
             "id": 7,
             "name": "Picanha6",
             "description": "Lorem",
             "price": 12.33,
-            "imageUrl":"./data/picanha.png"
+            "imageUrl":"../data/picanha.png"
         },
         {
             "id": 8,
             "name": "Picanha6",
             "description": "Lorem",
             "price": 12.33,
-            "imageUrl":"./data/picanha.png"
+            "imageUrl":"../data/picanha.png"
         },
         {
             "id": 9,
             "name": "Picanha6",
             "description": "Lorem",
             "price": 12.33,
-            "imageUrl":"./data/picanha.png"
+            "imageUrl":"../data/picanha.png"
         }
     ]
 }

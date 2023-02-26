@@ -34,7 +34,7 @@ const FoodList = () => {
       {loadedMeals && (
         <ul className="meal-main">
           {loadedMeals.map((meal) => (
-            <li key={meal.id}>
+            <li className="item-meal" key={meal.id}>
               <div className="card-meal">
                 <div className="meal-image">
                   <img
@@ -61,7 +61,7 @@ const FoodList = () => {
           ))}
         </ul>
       )}
-      <button onClick={loadMeals}>More Meals</button>
+      <button className="more-meals" onClick={loadMeals}>More Meals</button>
     </div>
   );
 };

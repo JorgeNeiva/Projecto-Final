@@ -7,10 +7,12 @@
 
 .title {
     position: absolute;
-    right: 10%;
+    right: 5%;
     bottom: 5%;
-    color: white;
+    color: rgb(15, 15, 15);
     z-index: 1;
+    font-family: 'Fredericka the Great';
+    font-size: 4rem;
 }
 
 .entry-image {

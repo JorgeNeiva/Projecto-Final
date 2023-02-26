@@ -23,12 +23,12 @@ function MainBar() {
         Home
       </button>
       <button className="meals" onClick={clickMeals}>
-        Meals
+        Refeições
       </button>
       <button className="cart" onClick={clickadd}>
         <BsCart2 />
         <div className="cart-text-container">
-          <p>Cart</p>
+          <p>Carrinho</p>
         </div>
         <div className="cart-items">1</div>
       </button>
