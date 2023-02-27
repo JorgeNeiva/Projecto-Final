@@ -1,6 +1,7 @@
 import { logDOM } from "@testing-library/react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Details.css";
 
 const FoodDetails = () => {
@@ -27,21 +28,29 @@ const FoodDetails = () => {
       {meal && (
         <>
           <div className="details-container">
+          
           <img className="details-img" src={meal.imageUrl}  alt={meal.name} />
           <h2 className="details-name">  {meal.name}</h2>
           {meal.extras ? (
             <ul className="details-extra" >
+              
               {meal.extras.map((extra, i) => (
                 <li key={i}>
-                  <button className="details-add" >+</button>
+                   <input type="checkbox" checked=""></input>
                   <h4>{extra.name}</h4>
                 </li>
+               
               ))}
             </ul>
+    
            
           ) : (
             <h2>No extras Available</h2>
+            
           )}
+          <Link to="/cart">
+                    <button className="add-cart-details">Adicionar</button>
+                  </Link>
          </div>
         </>
       )}

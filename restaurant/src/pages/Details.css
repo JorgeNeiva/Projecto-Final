@@ -39,3 +39,17 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+.add-cart-details{
+
+    margin-left: 40%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.add-cart-details:hover {
+    background-color: #a88958;
+}
