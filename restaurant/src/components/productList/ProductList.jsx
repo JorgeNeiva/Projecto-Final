@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
 
+
+
 const FoodList = () => {
   const [listOFmeals, setlistOFmeals] = useState([]);
   const [quantity, setQuantity] = useState(6);
@@ -28,9 +30,7 @@ const FoodList = () => {
 
   return (
     <div className="page-container">
-      <div className="search-bar-container">
-        <input className="search-bar" type="text" placeholder="Search..." />
-      </div>
+      
       {loadedMeals && (
         <ul className="meal-main">
           {loadedMeals.map((meal) => (
@@ -61,7 +61,7 @@ const FoodList = () => {
           ))}
         </ul>
       )}
-      <button className="more-meals" onClick={loadMeals}>More Meals</button>
+      <button className="more-meals" onClick={loadMeals}>Mais Refeições</button>
     </div>
   );
 };

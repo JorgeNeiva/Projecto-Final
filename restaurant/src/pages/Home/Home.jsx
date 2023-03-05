@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Restaurante from "../assets/images/restaurante.png";
+import Restaurante from "../../assets/images/restaurante.png";
 import "./Home.css";
 
 const Home = () => {

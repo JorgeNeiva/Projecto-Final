@@ -4,10 +4,10 @@
     "meals": [
         {
             "id": 1,
-            "name": "Picanha1",
+            "name": "Picanha",
             "description": "Da América do Sul ",
             "price": "17€" ,
-            "imageUrl":"../data/picanha.png",
+            "imageUrl":"./data/Images/picanha.png",
             "extras": [
                 {"name": "Batata Frita"},
                 {"name": "Batata Doce"},
@@ -18,10 +18,10 @@
         },
         {
             "id": 2,
-            "name": "Pizza1",
+            "name": "Pizza",
             "description": "À Balcão",
             "price": "15€",
-            "imageUrl":"../data/Pizza.png",
+            "imageUrl":"./data/images/Pizza.png",
             "extras": [
                 {"name": "Fiambre"},
                 {"name": "Tomate"},
@@ -32,55 +32,112 @@
         },
         {
             "id": 3,
-            "name": "Picanha3",
-            "description": "Lorem",
-            "price": "17€",
-            "imageUrl":"../data/picanha.png",
+            "name": "Bitoque",
+            "description": "À Chef",
+            "price": "12€",
+            "imageUrl":"./data/images/bitoque.png",
             "extras": [
-                {"name": "juice"}
+                {"name": "Arroz"},
+                {"name": "Batata frita"},
+                {"name": "Ovo"},
+                {"name": "Salada"}
+
             ]
         },
         {
             "id": 4,
-            "name": "Picanha4",
-            "description": "Lorem",
-            "price": 12.33,
-            "imageUrl":"../data/picanha.png"
+            "name": "Chocos grelhados",
+            "description": "Da nossa costa",
+            "price": "18€",
+            "imageUrl":"./data/images/chocos.png",
+            "extras": [
+                {"name": "Batata cozida"},
+                {"name": "Batata doce"},
+                {"name": "Legumes"},
+                {"name": "Salada"}
+
+            ]
         },
         {
             "id": 5,
-            "name": "Picanha5",
-            "description": "Lorem",
-            "price": 12.33,
-            "imageUrl":"../data/picanha.png"
+            "name": "Carapauzinhos fritos",
+            "description": "À Tia Alice",
+            "price": "14€",
+            "imageUrl":"./data/images/carapauzinhos_fritos.png",
+            "extras": [
+                {"name": "Arroz de tomate"},
+                {"name": "Arroz de tomate e pimentos"}
+            ]
         },
         {
             "id": 6,
-            "name": "Picanha6",
-            "description": "Lorem",
-            "price": 12.33,
-            "imageUrl":"../data/picanha.png"
+            "name": "Entrecosto grelhado",
+            "description": "Bem suculento",
+            "price": "12€",
+            "imageUrl":"./data/images/entrecosto.png",
+            "extras": [
+                {"name": "Batata Frita"},
+                {"name": "Batata Doce"},
+                {"name": "Arroz"},
+                {"name": "Feijão"}
+            ]
         },
         {
             "id": 7,
-            "name": "Picanha6",
-            "description": "Lorem",
-            "price": 12.33,
-            "imageUrl":"../data/picanha.png"
+            "name": "Chili com carne",
+            "description": "Um toque Mexicano",
+            "price": "10€",
+            "imageUrl":"./data/images/chilicarne.png",
+            "extras": [
+                {"name": "Batata Frita"},
+                {"name": "Batata Doce"},
+                {"name": "Arroz"}
+            ]
         },
         {
             "id": 8,
-            "name": "Picanha6",
-            "description": "Lorem",
-            "price": 12.33,
-            "imageUrl":"../data/picanha.png"
+            "name": "Frango com cerveja",
+            "description": "Especialidade Tio Manel",
+            "price": "18€",
+            "imageUrl":"./data/images/frangocerveja.png",
+            "extras": [
+                {"name": "Inteiro"},
+                {"name": "Ao meio"},
+                {"name": "Aos pedaços"}
+            ]
         },
         {
-            "id": 9,
-            "name": "Picanha6",
-            "description": "Lorem",
-            "price": 12.33,
-            "imageUrl":"../data/picanha.png"
+            "id": 8,
+            "name": "Quiche de alho francês",
+            "description": "Para vegetarianos",
+            "price": "10€",
+            "imageUrl":"./data/images/quiche.png",
+            "extras": [
+                {"name": "Azeitonas"},
+                {"name": "Tomate"},
+                {"name": "Espinafre"}
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Tarte de frutos vermelhos",
+            "description": "Deliciosa",
+            "price": "4€",
+            "imageUrl":"./data/images/tarte.png"
+        },
+        {
+            "id": 11,
+            "name": "Mousse de chocolate",
+            "description": "De chorar por mais",
+            "price": "4€",
+            "imageUrl":"./data/images/mousse.png"
+        },
+        {
+            "id": 12,
+            "name": "Pudim de maracúja",
+            "description": "De ir às nuvens",
+            "price": "4€",
+            "imageUrl":"./data/images/pudim.png"
         }
     ]
 }

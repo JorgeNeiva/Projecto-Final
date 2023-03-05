@@ -42,23 +42,9 @@
      
 }
 
-.search-bar-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    
-}
 
-.search-bar {
-    
-    align-items: center;
-    justify-content: center;
-   padding-left: 20px;
-    width: 16rem;
-    height: 2rem;
-    border-radius: 30px; 
-    border-color: black;
-}
+
+
 
 .actions-container {
     width: 100%;

@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 
 const Cart = () => {
     return(
-        <nav className="your-cart">
+        <div className="your-cart">
             <h1>Este é o teu pedido</h1>
              <ul>
                 <li>Pedido 1</li>
@@ -10,8 +10,20 @@ const Cart = () => {
                 <li>Pedido 3</li>
             </ul>
             <button >Finalizar pedido</button>
-            <form action=""></form>
-        </nav>
+
+            <form action="">
+            <input type="text" placeholder="Nome" />
+            <input type="tel" placeholder='Morada'></input>
+            <input type="email" placeholder='E-mail'></input>
+            <input type="submit"></input>
+            </form>
+
+            
+        
+
+        </div>
+
+ 
     
             
     )

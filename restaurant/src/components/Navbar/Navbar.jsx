@@ -25,6 +25,9 @@ function MainBar() {
       <button className="meals" onClick={clickMeals}>
         Refeições
       </button>
+      <div className="search-bar-container">
+        <input className="search-bar" type="text" placeholder="Search..." />
+      </div>
       <button className="cart" onClick={clickadd}>
         <BsCart2 />
         <div className="cart-text-container">

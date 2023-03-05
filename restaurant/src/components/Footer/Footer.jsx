@@ -1,5 +1,6 @@
 import './Footer.css'
 import { Navigate, useNavigate } from 'react-router-dom';
+import ShareButtons from '../Social/Social';
 
 function Footer(){
     const navigate = useNavigate();
@@ -10,7 +11,13 @@ function Footer(){
 
     return(
         <footer className='footer-contain'>
-            <button className='about-button' onClick={clickAbout}>Onde estamos</button>
+            <div >
+                <button className='about-button'  onClick={clickAbout}>Onde estamos</button>
+            </div>
+            <div className="social-buttons">
+                <ShareButtons ></ShareButtons>
+            </div>
+            
         </footer>
     )
 }

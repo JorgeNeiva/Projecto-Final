@@ -79,5 +79,16 @@
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s ease-in-out;
 }
+.search-bar {
+    
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    width: 16rem;
+    height: 2rem;
+    border-radius: 30px; 
+    border-color: black;
+}
+
 
 

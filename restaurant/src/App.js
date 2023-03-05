@@ -1,12 +1,12 @@
 import "./App.css";
 import MainBar from "./components/Navbar/Navbar";
-import FoodList from "./components/productList/ProductList.jsx";
+import FoodList from "./components/ProductList/ProductList.jsx";
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import FoodDetails from "./pages/Details";
-import Footer from "./components/Footer";
-import Cart from "./pages/Cart";
-import Contacts from "./components/Contacts";
+import Home from "./pages/Home/Home";
+import FoodDetails from "./pages/Details/Details";
+import Footer from "./components/Footer/Footer";
+import Cart from "./pages/Cart/Cart";
+import Contacts from "./components/Contacts/Contacts";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="/product-list" element={<FoodList />} />
         <Route path="/food_details/:id" element={<FoodDetails />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/contacts" element={<Contacts />} />
+        <Route path="contacts" element={<Contacts />} />
       </Routes>
       <Footer></Footer>
     </div>

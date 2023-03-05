@@ -4,6 +4,10 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./Details.css";
 
+
+
+
+
 const FoodDetails = () => {
   const { id } = useParams();
   const [meal, setMeal] = useState(undefined);
@@ -36,7 +40,7 @@ const FoodDetails = () => {
               
               {meal.extras.map((extra, i) => (
                 <li key={i}>
-                   <input type="checkbox" checked=""></input>
+                   <input type="checkbox" ></input>
                   <h4>{extra.name}</h4>
                 </li>
                
