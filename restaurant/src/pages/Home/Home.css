@@ -1,28 +1,22 @@
-.entry-contain {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #e9e9e9;
-  }
-  
-  
-  @media (max-width: 768px) {
-    .title {
-      font-size: 2rem;
-    }
-  }
-  
+.entry-image-container {
+  display: flex;
+  justify-content: center;
+  background-color: #e9e9e9;
+}
+
+.entry-image {
+  max-width: 50%;
+  height: 80%;
+}
+
+@media screen and (max-width: 1024px) {
   .entry-image {
-    max-width: 100%;
-    height: auto;
+    max-width: 70%;
   }
-  
-  @media (max-width: 768px) {
-    .entry-image {
-      max-width: 80%;
-      margin-top: 4rem;
-    }
+}
+
+@media screen and (max-width: 768px) {
+  .entry-image {
+    max-width: 90%;
   }
-  
+}

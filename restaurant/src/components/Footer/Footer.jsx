@@ -12,7 +12,7 @@ function Footer(){
     return(
         <footer className='footer-contain'>
             <div >
-                <button className='about-button'  onClick={clickAbout}>Onde estamos</button>
+                <button className='about-button'  onClick={clickAbout}>Contatos</button>
             </div>
             <div className="social-buttons">
                 <ShareButtons ></ShareButtons>

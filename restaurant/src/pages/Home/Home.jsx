@@ -1,11 +1,10 @@
-
 import Restaurante from "../../assets/images/restaurante.png";
 import Logo from "../../assets/images/LogoB.T.png";
 import "./Home.css";
 
 const Home = () => {
   return (
-    <div className="entry-contain">
+    <div className="entry-image-container">
       <img
         className="entry-image"
         src={Logo}
