@@ -1,39 +1,36 @@
-.main-details{
-    display: flex;
-    
+h1 {
+    font-size: 1rem;
+    color: red;
 }
 
-
+.contacts-page-container {
+    padding: 1rem 2rem
+}
 
 .contacts-container{
-
-    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-block-end: 2rem;
+    gap: 2rem;
 }
 
-.contact-details {
-
+.contacts-form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.contacts-map{
-    position: relative;
- 
-
-
-
+@media (min-width: 700px) {
+    h1 {
+        font-size: 3rem;
+        color: green;
+    }
 }
 
-.contacts-form{
-
- 
-}
-
-.form-style{
-
-}
-
-.contacts-social{
-
-
-
-
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 5rem;
+        color: blue;
+    }
 }

@@ -6,50 +6,50 @@
             "id": 1,
             "name": "Picanha",
             "description": "Da América do Sul ",
-            "price": "17€" ,
-            "imageUrl":"./data/Images/picanha.png",
+            "price": 17 ,
+            "imageUrl":"../data/Images/picanha.png",
             "extras": [
-                {"name": "Batata Frita"},
-                {"name": "Batata Doce"},
-                {"name": "Arroz"},
-                {"name": "Feijão"},
-                {"name": "Farofa"}
+                {"id": 1,"name": "Batata Frita", "checked": false},
+                {"id": 2,"name": "Batata Doce", "checked": false},
+                {"id": 3,"name": "Arroz", "checked": false},
+                {"id": 4,"name": "Feijão", "checked": false},
+                {"id": 5,"name": "Farofa", "checked": false}
             ]
         },
         {
             "id": 2,
             "name": "Pizza",
             "description": "À Balcão",
-            "price": "15€",
-            "imageUrl":"./data/images/Pizza.png",
+            "price": 15,
+            "imageUrl":"../data/images/Pizza.png",
             "extras": [
-                {"name": "Fiambre"},
-                {"name": "Tomate"},
-                {"name": "Azeitona"},
-                {"name": "Ananás"},
-                {"name": "Queijo"}
+                {"id": 1,"name": "Batata Frita", "checked": false},
+                {"id": 2,"name": "Batata Doce", "checked": false},
+                {"id": 3,"name": "Arroz", "checked": false},
+                {"id": 4,"name": "Feijão", "checked": false},
+                {"id": 5,"name": "Farofa", "checked": false}
             ]
         },
         {
             "id": 3,
             "name": "Bitoque",
             "description": "À Chef",
-            "price": "12€",
-            "imageUrl":"./data/images/bitoque.png",
+            "price": 12,
+            "imageUrl":"../data/images/bitoque.png",
             "extras": [
-                {"name": "Arroz"},
-                {"name": "Batata frita"},
-                {"name": "Ovo"},
-                {"name": "Salada"}
-
+                {"id": 1,"name": "Batata Frita", "checked": false},
+                {"id": 2,"name": "Batata Doce", "checked": false},
+                {"id": 3,"name": "Arroz", "checked": false},
+                {"id": 4,"name": "Feijão", "checked": false},
+                {"id": 5,"name": "Farofa", "checked": false}
             ]
         },
         {
             "id": 4,
             "name": "Chocos grelhados",
             "description": "Da nossa costa",
-            "price": "18€",
-            "imageUrl":"./data/images/chocos.png",
+            "price": 18,
+            "imageUrl":"../data/images/chocos.png",
             "extras": [
                 {"name": "Batata cozida"},
                 {"name": "Batata doce"},
@@ -62,8 +62,8 @@
             "id": 5,
             "name": "Carapauzinhos fritos",
             "description": "À Tia Alice",
-            "price": "14€",
-            "imageUrl":"./data/images/carapauzinhos_fritos.png",
+            "price": 14,
+            "imageUrl":"../data/images/carapauzinhos_fritos.png",
             "extras": [
                 {"name": "Arroz de tomate"},
                 {"name": "Arroz de tomate e pimentos"}
@@ -73,8 +73,8 @@
             "id": 6,
             "name": "Entrecosto grelhado",
             "description": "Bem suculento",
-            "price": "12€",
-            "imageUrl":"./data/images/entrecosto.png",
+            "price": 12,
+            "imageUrl":"../data/images/entrecosto.png",
             "extras": [
                 {"name": "Batata Frita"},
                 {"name": "Batata Doce"},
@@ -86,8 +86,8 @@
             "id": 7,
             "name": "Chili com carne",
             "description": "Um toque Mexicano",
-            "price": "10€",
-            "imageUrl":"./data/images/chilicarne.png",
+            "price": 10,
+            "imageUrl":"../data/images/chilicarne.png",
             "extras": [
                 {"name": "Batata Frita"},
                 {"name": "Batata Doce"},
@@ -98,20 +98,20 @@
             "id": 8,
             "name": "Frango com cerveja",
             "description": "Especialidade Tio Manel",
-            "price": "18€",
-            "imageUrl":"./data/images/frangocerveja.png",
+            "price": 18,
+            "imageUrl":"../data/images/frangocerveja.png",
             "extras": [
-                {"name": "Inteiro"},
-                {"name": "Ao meio"},
-                {"name": "Aos pedaços"}
+                {"id": 1, "name": "Inteiro"},
+                {"id": 2, "name": "Ao meio"},
+                {"id": 3, "name": "Aos pedaços"}
             ]
         },
         {
-            "id": 8,
+            "id": 9,
             "name": "Quiche de alho francês",
             "description": "Para vegetarianos",
-            "price": "10€",
-            "imageUrl":"./data/images/quiche.png",
+            "price": 10,
+            "imageUrl":"../data/images/quiche.png",
             "extras": [
                 {"name": "Azeitonas"},
                 {"name": "Tomate"},
@@ -122,22 +122,22 @@
             "id": 10,
             "name": "Tarte de frutos vermelhos",
             "description": "Deliciosa",
-            "price": "4€",
-            "imageUrl":"./data/images/tarte.png"
+            "price": 4,
+            "imageUrl":"../data/images/tarte.png"
         },
         {
             "id": 11,
             "name": "Mousse de chocolate",
             "description": "De chorar por mais",
-            "price": "4€",
-            "imageUrl":"./data/images/mousse.png"
+            "price": 4,
+            "imageUrl":"../data/images/mousse.png"
         },
         {
             "id": 12,
             "name": "Pudim de maracúja",
             "description": "De ir às nuvens",
-            "price": "4€",
-            "imageUrl":"./data/images/pudim.png"
+            "price": 4,
+            "imageUrl":"../data/images/pudim.png"
         }
     ]
 }

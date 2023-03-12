@@ -1,25 +1,31 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
+import "./Form.css"
 
-class ContactForm extends Component {
-  render() {
-    return (
-      <form>
-        <label>
-          Nome:
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Email:
-          <input type="email" name="email" />
-        </label>
-        <label>
-          Mensagem:
-          <textarea name="message"></textarea>
-        </label>
-        <button type="submit">Enviar</button>
-      </form>
-    );
-  }
+
+
+function SubscriptionForm() {
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(`Subscribed with email: ${email}`);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <h2>Susbcreve a nossa newsletter e fica a par das novidades</h2>
+      <label htmlFor="email">Digite seu email:</label>
+      <input
+        type="email"
+        id="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+      />
+      <button type="submit">Inscrever</button>
+    </form>
+  );
 }
 
-export default ContactForm;
+
+export default SubscriptionForm;

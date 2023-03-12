@@ -17,6 +17,7 @@ function Footer(){
             <div className="social-buttons">
                 <ShareButtons ></ShareButtons>
             </div>
+            <p className='copy'>&copy; Copyright Taberna  2023</p>
             
         </footer>
     )

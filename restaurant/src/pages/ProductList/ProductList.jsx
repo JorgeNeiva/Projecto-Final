@@ -1,28 +1,15 @@
 import "./ProductList.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import { useEffect } from "react";
-
-
+import { useEffect, useState } from "react";
+import { useMeals } from "../../context/MealsContext";
 
 const FoodList = () => {
-  const [listOFmeals, setlistOFmeals] = useState([]);
   const [quantity, setQuantity] = useState(6);
-  let loadedMeals = listOFmeals.slice(0, quantity);
+  const {mealsShown} = useMeals();
+  let listOfMeals =  mealsShown.slice(0, quantity);
 
-  useEffect(() => {
-    fetchData();
-  }, [listOFmeals, quantity]);
-
-  const fetchData = async () => {
-    try {
-      const resp = await fetch("./data/meals.json");
-      const data = await resp.json();
-      setlistOFmeals(data.meals);
-    } catch (err) {
-      console.error(err);
-    }
-  };
+  useEffect( () => {
+  },[mealsShown, quantity])
 
   const loadMeals = () => {
     setQuantity(quantity + 6);
@@ -31,9 +18,9 @@ const FoodList = () => {
   return (
     <div className="page-container">
       
-      {loadedMeals && (
+      {listOfMeals && (
         <ul className="meal-main">
-          {loadedMeals.map((meal) => (
+          {listOfMeals.map((meal) => (
             <li className="item-meal" key={meal.id}>
               <div className="card-meal">
                 <div className="meal-image">
@@ -46,14 +33,11 @@ const FoodList = () => {
                 <div>
                   <h1>{meal.name}</h1>
                   <h2>{meal.description}</h2>
-                  <p>{meal.price}</p>
+                  <p>{meal.price} €</p>
                 </div>
                 <div className="actions-container">
                   <Link to={`/food_details/${meal.id}`}>
                     <button className="more-info">Detalhe</button>
-                  </Link>
-                  <Link to="/cart">
-                    <button className="add-cart">Adicionar</button>
                   </Link>
                 </div>
               </div>
@@ -61,7 +45,9 @@ const FoodList = () => {
           ))}
         </ul>
       )}
+      <div className="button-container">
       <button className="more-meals" onClick={loadMeals}>Mais Refeições</button>
+      </div>
     </div>
   );
 };

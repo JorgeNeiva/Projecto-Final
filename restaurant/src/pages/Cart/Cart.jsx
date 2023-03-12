@@ -1,31 +1,40 @@
-import { useNavigate } from 'react-router-dom'
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { useCart } from "../../context/CartContext";
 
 const Cart = () => {
+    const {cartState, removeFromCart, totalPrice} = useCart();
+
+    useEffect(() => {
+    },[totalPrice])
+    
     return(
         <div className="your-cart">
             <h1>Este é o teu pedido</h1>
-             <ul>
-                <li>Pedido 1</li>
-                <li>Pedido 2</li>
-                <li>Pedido 3</li>
+            <ul>
+            {cartState && cartState.map(meal => (
+                <li key={meal.cartItemId}>
+                    <button onClick={() => removeFromCart(meal.cartItemId)}>X</button>
+                    <span>{meal.name} - {meal.price}</span>
+                    <br />
+                    {meal.extras.map((extra) => (
+                        <div key={extra.id}>
+                        {extra.checked ? (
+                            <span>{extra.name}</span>
+                        ): (undefined)}
+                        </div>
+                    ))}
+                </li>
+            ))}
             </ul>
-            <button >Finalizar pedido</button>
-
-            <form action="">
-            <input type="text" placeholder="Nome" />
-            <input type="tel" placeholder='Morada'></input>
-            <input type="email" placeholder='E-mail'></input>
-            <input type="submit"></input>
-            </form>
-
-            
-        
-
+            <div>
+                <h4>Total</h4>
+                <p>{totalPrice} €</p>
+            </div>
+            <Link to="/checkout">
+                     <button >Finalizar pedido</button>
+            </Link>
         </div>
-
- 
-    
-            
     )
 }
 

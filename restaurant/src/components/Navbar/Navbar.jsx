@@ -1,40 +1,43 @@
 import "./Navbar.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BsCart2 } from "react-icons/bs";
+import Logo from "../../assets/images/LogoB.T.png";
+import { useCart } from "../../context/CartContext";
+import { useMeals } from "../../context/MealsContext";
 
-function MainBar() {
-  const navigate = useNavigate();
+const MainBar = () => {
+  const {cartState} = useCart();
+  const {showMealsBySearching} = useMeals();
 
-  function clickHome() {
-    navigate("/");
-  }
-
-  function clickMeals() {
-    navigate("/product-list");
-  }
-
-  function clickadd() {
-    navigate("/cart");
+  const handleSearchBarValue = (event) => {
+    const value = event.target.value
+    showMealsBySearching(value.toLowerCase());
   }
 
   return (
     <nav className="nav-bar">
-      <button className="my-home" onClick={clickHome}>
-        Home
-      </button>
-      <button className="meals" onClick={clickMeals}>
-        Refeições
-      </button>
+      <Link to="/">
+        <button className="my-home">
+        <img className="logo" src={Logo}alt="Logo" />
+        </button>
+      </Link>
+      <Link to="/product-list">
+        <button className="meals">
+          Refeições
+        </button>
+      </Link>
       <div className="search-bar-container">
-        <input className="search-bar" type="text" placeholder="Search..." />
+        <input className="search-bar" type="text" placeholder="O que te está a apetecer?" onChange={handleSearchBarValue} />
       </div>
-      <button className="cart" onClick={clickadd}>
-        <BsCart2 />
-        <div className="cart-text-container">
-          <p>Carrinho</p>
-        </div>
-        <div className="cart-items">1</div>
-      </button>
+      <Link to="/cart">
+        <button className="cart">
+          <BsCart2 />
+          <div className="cart-text-container">
+            <p>Carrinho</p>
+          </div>
+          <div className="cart-items">{cartState.length}</div>
+        </button>
+      </Link>
     </nav>
   );
 }

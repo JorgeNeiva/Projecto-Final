@@ -4,14 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+import MealsProvider from './context/MealsContext';
+import CartProvider from './context/CartContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <App />
-    </BrowserRouter>
+    <MealsProvider>
+      <CartProvider>
+        <App />
+      </CartProvider>
+    </MealsProvider>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
