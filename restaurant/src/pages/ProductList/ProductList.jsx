@@ -37,7 +37,7 @@ const FoodList = () => {
                 </div>
                 <div className="actions-container">
                   <Link to={`/food_details/${meal.id}`}>
-                    <button className="more-info">Detalhe</button>
+                    <button className="more-info">Adicionar</button>
                   </Link>
                 </div>
               </div>

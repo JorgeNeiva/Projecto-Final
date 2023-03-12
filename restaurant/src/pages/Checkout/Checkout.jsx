@@ -3,8 +3,7 @@ import "./Checkout.css"
 const Order = () => {
     return (
       <div>
-        <h1 className="order-final"> Pedido Final</h1>
-        <p>Ola</p>
+        <h1 className="order-final"> Dados pessoais</h1>
         
        
        <form action="">

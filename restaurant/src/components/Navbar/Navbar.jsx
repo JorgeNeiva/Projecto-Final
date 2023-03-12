@@ -21,7 +21,7 @@ const MainBar = () => {
         <img className="logo" src={Logo}alt="Logo" />
         </button>
       </Link>
-      <Link to="/product-list">
+      <Link to="/product-list" className="link-meals">
         <button className="meals">
           Refeições
         </button>
@@ -29,7 +29,7 @@ const MainBar = () => {
       <div className="search-bar-container">
         <input className="search-bar" type="text" placeholder="O que te está a apetecer?" onChange={handleSearchBarValue} />
       </div>
-      <Link to="/cart">
+      <Link to="/cart" className="link-cart">
         <button className="cart">
           <BsCart2 />
           <div className="cart-text-container">

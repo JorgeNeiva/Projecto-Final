@@ -51,7 +51,7 @@ const FoodDetails = () => {
               ))}
             </ul>
           ) : (
-            <h2>No extras Available</h2>
+            <h2>Não há extras para esta refeição</h2>
           )}
           <Link to="/product-list">
             <button className="add-cart-details" onClick={() => addMealToCart(meal)}>Adicionar</button>
@@ -64,3 +64,5 @@ const FoodDetails = () => {
 };
 
 export default FoodDetails;
+
+

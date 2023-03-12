@@ -12,9 +12,9 @@ function SubscriptionForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='form-container' onSubmit={handleSubmit} >
       <h2>Susbcreve a nossa newsletter e fica a par das novidades</h2>
-      <label htmlFor="email">Digite seu email:</label>
+      <label htmlFor="email">Email:</label>
       <input
         type="email"
         id="email"

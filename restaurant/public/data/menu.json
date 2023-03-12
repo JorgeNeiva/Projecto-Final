@@ -1,8 +1,0 @@
-{
-    "pratos": [
-      { "id": 1, "name": "Picanha" },
-      { "id": 2, "name": "Pizza" },
-      { "id": 3, "name": "Bitoque" }
-    ]
-  }
-  

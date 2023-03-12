@@ -1,23 +1,24 @@
-.footer-contain{
+.footer-contain {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: #e9e9e9;
-    height: 3rem;
     align-items: center;
-    gap:50px;
-    ;
+    padding: 2rem;
+    gap:10px;
+    background-color: #e9e9e9;
 }
 
-.about-button{
-    justify-content: center;
+.about-button  {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-inline: 10px;
     width: 8rem;
     height: 2rem;
     border-radius: 30px;
     cursor: pointer;
-
+    
 }
 
 .about-button:hover {
@@ -26,14 +27,30 @@
     transition: transform 0.2s ease-in-out;
 }
 
-.social-buttons{
+
+.social-buttons {
     display: flex;
-    gap: 15px;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 5px;
 }
 
+.copy {
+    font-size: 0.75rem;
+}
 
-.copy{
-    font-size: 12px;
-    
+@media screen and (min-width: 768px) {
+    .footer-contain {
+        flex-direction: row;
+    }
+
+    .about-button {
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+
+    .social-buttons {
+        margin-bottom: 0;
+    }
 }

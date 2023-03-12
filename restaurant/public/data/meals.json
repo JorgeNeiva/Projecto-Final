@@ -23,11 +23,11 @@
             "price": 15,
             "imageUrl":"../data/images/Pizza.png",
             "extras": [
-                {"id": 1,"name": "Batata Frita", "checked": false},
-                {"id": 2,"name": "Batata Doce", "checked": false},
-                {"id": 3,"name": "Arroz", "checked": false},
-                {"id": 4,"name": "Feijão", "checked": false},
-                {"id": 5,"name": "Farofa", "checked": false}
+                {"id": 1,"name": "Fiambre", "checked": false},
+                {"id": 2,"name": "Azeitonas", "checked": false},
+                {"id": 3,"name": "Ananás", "checked": false},
+                {"id": 4,"name": "Tomate", "checked": false},
+                {"id": 5,"name": "Chourição", "checked": false}
             ]
         },
         {
@@ -40,8 +40,8 @@
                 {"id": 1,"name": "Batata Frita", "checked": false},
                 {"id": 2,"name": "Batata Doce", "checked": false},
                 {"id": 3,"name": "Arroz", "checked": false},
-                {"id": 4,"name": "Feijão", "checked": false},
-                {"id": 5,"name": "Farofa", "checked": false}
+                {"id": 4,"name": "Salada", "checked": false},
+                {"id": 5,"name": "Ovo", "checked": false}
             ]
         },
         {
@@ -51,11 +51,9 @@
             "price": 18,
             "imageUrl":"../data/images/chocos.png",
             "extras": [
-                {"name": "Batata cozida"},
-                {"name": "Batata doce"},
-                {"name": "Legumes"},
-                {"name": "Salada"}
-
+                {"id": 1,"name": "Batata Cozida", "checked": false},
+                {"id": 2,"name": "Grelos", "checked": false},
+                {"id": 3,"name": "Salada", "checked": false}
             ]
         },
         {
@@ -65,8 +63,9 @@
             "price": 14,
             "imageUrl":"../data/images/carapauzinhos_fritos.png",
             "extras": [
-                {"name": "Arroz de tomate"},
-                {"name": "Arroz de tomate e pimentos"}
+                {"id": 1,"name": "Arroz branco", "checked": false},
+                {"id": 2,"name": "Arroz de grelos", "checked": false},
+                {"id": 3,"name": "Arroz de tomate", "checked": false}
             ]
         },
         {
@@ -76,10 +75,10 @@
             "price": 12,
             "imageUrl":"../data/images/entrecosto.png",
             "extras": [
-                {"name": "Batata Frita"},
-                {"name": "Batata Doce"},
-                {"name": "Arroz"},
-                {"name": "Feijão"}
+                {"id": 1,"name": "Batata Frita", "checked": false},
+                {"id": 2,"name": "Batata Doce", "checked": false},
+                {"id": 3,"name": "Arroz", "checked": false},
+                {"id": 4,"name": "Salada", "checked": false}
             ]
         },
         {
@@ -89,9 +88,10 @@
             "price": 10,
             "imageUrl":"../data/images/chilicarne.png",
             "extras": [
-                {"name": "Batata Frita"},
-                {"name": "Batata Doce"},
-                {"name": "Arroz"}
+                {"id": 1,"name": "Batata Frita", "checked": false},
+                {"id": 2,"name": "Batata Doce", "checked": false},
+                {"id": 3,"name": "Arroz", "checked": false},
+                {"id": 4,"name": "Salada", "checked": false}
             ]
         },
         {
@@ -101,9 +101,9 @@
             "price": 18,
             "imageUrl":"../data/images/frangocerveja.png",
             "extras": [
-                {"id": 1, "name": "Inteiro"},
-                {"id": 2, "name": "Ao meio"},
-                {"id": 3, "name": "Aos pedaços"}
+                {"id": 1,"name": "Inteiro", "checked": false},
+                {"id": 2,"name": "Cortado ao meio", "checked": false},
+                {"id": 3,"name": "Em pedaços", "checked": false}
             ]
         },
         {
@@ -113,9 +113,9 @@
             "price": 10,
             "imageUrl":"../data/images/quiche.png",
             "extras": [
-                {"name": "Azeitonas"},
-                {"name": "Tomate"},
-                {"name": "Espinafre"}
+                {"id": 1,"name": "Espinafres", "checked": false},
+                {"id": 2,"name": "Tomate", "checked": false},
+                {"id": 3,"name": "Azeitonas", "checked": false}
             ]
         },
         {
@@ -123,21 +123,30 @@
             "name": "Tarte de frutos vermelhos",
             "description": "Deliciosa",
             "price": 4,
-            "imageUrl":"../data/images/tarte.png"
+            "imageUrl":"../data/images/tarte.png",
+            "extras": [
+                {"id": 1,"name": "Amêndoas", "checked": false}
+            ]
         },
         {
             "id": 11,
             "name": "Mousse de chocolate",
             "description": "De chorar por mais",
             "price": 4,
-            "imageUrl":"../data/images/mousse.png"
+            "imageUrl":"../data/images/mousse.png",
+            "extras": [
+                {"id": 1,"name": "Amêndoas", "checked": false}
+            ]
         },
         {
             "id": 12,
             "name": "Pudim de maracúja",
             "description": "De ir às nuvens",
             "price": 4,
-            "imageUrl":"../data/images/pudim.png"
+            "imageUrl":"../data/images/pudim.png",
+            "extras": [
+                {"id": 1,"name": "Amêndoas", "checked": false}
+            ]
         }
     ]
 }
