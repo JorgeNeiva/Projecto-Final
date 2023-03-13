@@ -21,7 +21,7 @@
             "name": "Pizza",
             "description": "À Balcão",
             "price": 15,
-            "imageUrl":"../data/images/Pizza.png",
+            "imageUrl":"../data/Images/Pizza.png",
             "extras": [
                 {"id": 1,"name": "Fiambre", "checked": false},
                 {"id": 2,"name": "Azeitonas", "checked": false},
@@ -35,7 +35,7 @@
             "name": "Bitoque",
             "description": "À Chef",
             "price": 12,
-            "imageUrl":"../data/images/bitoque.png",
+            "imageUrl":"../data/Images/bitoque.png",
             "extras": [
                 {"id": 1,"name": "Batata Frita", "checked": false},
                 {"id": 2,"name": "Batata Doce", "checked": false},
@@ -49,7 +49,7 @@
             "name": "Chocos grelhados",
             "description": "Da nossa costa",
             "price": 18,
-            "imageUrl":"../data/images/chocos.png",
+            "imageUrl":"../data/Images/chocos.png",
             "extras": [
                 {"id": 1,"name": "Batata Cozida", "checked": false},
                 {"id": 2,"name": "Grelos", "checked": false},
@@ -61,7 +61,7 @@
             "name": "Carapauzinhos fritos",
             "description": "À Tia Alice",
             "price": 14,
-            "imageUrl":"../data/images/carapauzinhos_fritos.png",
+            "imageUrl":"../data/Images/carapauzinhos_fritos.png",
             "extras": [
                 {"id": 1,"name": "Arroz branco", "checked": false},
                 {"id": 2,"name": "Arroz de grelos", "checked": false},
@@ -73,7 +73,7 @@
             "name": "Entrecosto grelhado",
             "description": "Bem suculento",
             "price": 12,
-            "imageUrl":"../data/images/entrecosto.png",
+            "imageUrl":"../data/Images/entrecosto.png",
             "extras": [
                 {"id": 1,"name": "Batata Frita", "checked": false},
                 {"id": 2,"name": "Batata Doce", "checked": false},
@@ -86,7 +86,7 @@
             "name": "Chili com carne",
             "description": "Um toque Mexicano",
             "price": 10,
-            "imageUrl":"../data/images/chilicarne.png",
+            "imageUrl":"../data/Images/chilicarne.png",
             "extras": [
                 {"id": 1,"name": "Batata Frita", "checked": false},
                 {"id": 2,"name": "Batata Doce", "checked": false},
@@ -99,7 +99,7 @@
             "name": "Frango com cerveja",
             "description": "Especialidade Tio Manel",
             "price": 18,
-            "imageUrl":"../data/images/frangocerveja.png",
+            "imageUrl":"../data/Images/frangocerveja.png",
             "extras": [
                 {"id": 1,"name": "Inteiro", "checked": false},
                 {"id": 2,"name": "Cortado ao meio", "checked": false},
@@ -111,7 +111,7 @@
             "name": "Quiche de alho francês",
             "description": "Para vegetarianos",
             "price": 10,
-            "imageUrl":"../data/images/quiche.png",
+            "imageUrl":"../data/Images/quiche.png",
             "extras": [
                 {"id": 1,"name": "Espinafres", "checked": false},
                 {"id": 2,"name": "Tomate", "checked": false},
@@ -123,7 +123,7 @@
             "name": "Tarte de frutos vermelhos",
             "description": "Deliciosa",
             "price": 4,
-            "imageUrl":"../data/images/tarte.png",
+            "imageUrl":"../data/Images/tarte.png",
             "extras": [
                 {"id": 1,"name": "Amêndoas", "checked": false}
             ]
@@ -133,7 +133,7 @@
             "name": "Mousse de chocolate",
             "description": "De chorar por mais",
             "price": 4,
-            "imageUrl":"../data/images/mousse.png",
+            "imageUrl":"../data/Images/mousse.png",
             "extras": [
                 {"id": 1,"name": "Amêndoas", "checked": false}
             ]
@@ -143,7 +143,7 @@
             "name": "Pudim de maracúja",
             "description": "De ir às nuvens",
             "price": 4,
-            "imageUrl":"../data/images/pudim.png",
+            "imageUrl":"../data/Images/pudim.png",
             "extras": [
                 {"id": 1,"name": "Amêndoas", "checked": false}
             ]
