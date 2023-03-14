@@ -46,7 +46,7 @@
         },
         {
             "id": 4,
-            "name": "Chocos grelhados",
+            "name": "Chocos grelhados na brasa ",
             "description": "Da nossa costa",
             "price": 18,
             "imageUrl":"../data/Images/chocos.png",
@@ -83,7 +83,7 @@
         },
         {
             "id": 7,
-            "name": "Chili com carne",
+            "name": "Chili com carne e legumes",
             "description": "Um toque Mexicano",
             "price": 10,
             "imageUrl":"../data/Images/chilicarne.png",

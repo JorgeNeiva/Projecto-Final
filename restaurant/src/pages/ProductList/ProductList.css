@@ -17,7 +17,7 @@
   
   .item-meal {
     width: 300px;
-    margin: 10px;
+    margin: 35px;
   }
   
   .card-meal {
@@ -32,6 +32,7 @@
   .meal-img {
     max-width: 100%;
     height: auto;
+    border-radius: 20px;
   }
   
   .actions-container {
@@ -41,11 +42,14 @@
   }
   
   .more-info {
-    font-size: 1rem;
-    width: 150px;
-    height: 50px;
+    background-color:  #ccc;
+    color: black;
+    border: 1px solid black;
     border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
 
   .more-info:hover {
@@ -59,11 +63,14 @@
   }
   
   .more-meals {
-    cursor: pointer;
-    width: 150px;
-    height: 50px;
+    background-color: #a88958;
+    color: black;
+    border: 1px solid black;
     border-radius: 20px;
-    background-color: #a88958
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
 
   .more-meals:hover {
@@ -73,7 +80,7 @@
   @media screen and (max-width: 768px) {
   .item-meal {
     width: 45%;
-    margin: 5px;
+    margin: 8px;
   }
 }
 

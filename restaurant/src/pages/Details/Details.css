@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background-color: #e9e9e9;
   }
   
   .details-container {
@@ -18,6 +19,7 @@
     max-width: 500px;
     height: auto;
     margin-bottom: 20px;
+    border-radius: 20px;
   }
   
   .details-name {
@@ -40,21 +42,23 @@
   
   .details-extra h4 {
     margin-left: 10px;
+    line-height: 0.1;
   }
   
   .add-cart-details {
-    background-color: #a88958;
+    background-color:  #a88958;
     color: black;
-    border: none;
+    border: 1px solid black;
+    border-radius: 20px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1.5rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
 
   .add-cart-details:hover {
     background-color: white;
-    color:#a88958;
-    border: 1px solid black
+    color: black;
 }
 
 input[type="checkbox"] {
@@ -94,6 +98,7 @@ input[type="checkbox"] {
     
     .details-extra h4 {
       font-size: 14px;
+      line-height: 0.4;
     }
     
     .add-cart-details {
@@ -117,5 +122,6 @@ input[type="checkbox"] {
     }
   }
   
+
 
  

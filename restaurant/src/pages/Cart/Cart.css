@@ -24,6 +24,9 @@
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
 }
+.meal-name{
+  font-size: 1.2rem;
+}
 
 .item-cancel {
   background-color: #fff;
@@ -35,7 +38,8 @@
 }
 
 .item-cancel:hover {
-  text-decoration: underline;
+  background-color: #ccc;
+  border-radius: 50%;
 }
 
 .cart-total {
@@ -96,4 +100,3 @@
       padding: 8px 16px;
     }
   }
-  

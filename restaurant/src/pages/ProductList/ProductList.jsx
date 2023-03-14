@@ -5,11 +5,11 @@ import { useMeals } from "../../context/MealsContext";
 
 const FoodList = () => {
   const [quantity, setQuantity] = useState(6);
-  const {mealsShown} = useMeals();
-  let listOfMeals =  mealsShown.slice(0, quantity);
+  const {meals} = useMeals();
+  let listOfMeals =  meals.slice(0, quantity);
 
   useEffect( () => {
-  },[mealsShown, quantity])
+  },[meals, quantity])
 
   const loadMeals = () => {
     setQuantity(quantity + 6);
@@ -17,7 +17,6 @@ const FoodList = () => {
 
   return (
     <div className="page-container">
-      
       {listOfMeals && (
         <ul className="meal-main">
           {listOfMeals.map((meal) => (
@@ -37,7 +36,7 @@ const FoodList = () => {
                 </div>
                 <div className="actions-container">
                   <Link to={`/food_details/${meal.id}`}>
-                    <button className="more-info">Adicionar</button>
+                    <button className="more-info">Detalhe</button>
                   </Link>
                 </div>
               </div>

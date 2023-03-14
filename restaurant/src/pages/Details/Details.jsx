@@ -7,31 +7,21 @@ import "./Details.css";
 
 const FoodDetails = () => {
   const { id } = useParams();
-  const { mealsShown } = useMeals();
+  const { meals } = useMeals();
   const { addMealToCart } = useCart();
   const [ meal, setMeal] = useState(undefined);
 
   useEffect( () => {
-    fetchMealByID();
-  }, [])
-
-  useEffect(() => {
-    
-  }, [meal])
-
-  const fetchMealByID = () => {
-    const meal = mealsShown.find((meal) => meal.id === +id)
+    const meal = meals.find((meal) => meal.id === +id)
     setMeal(meal);
+  }, [id, meals])
+  
+
+  const toggleExtraOnMeal = (value, extraId) => {
+    setMeal({
+      ...meal, 
+      extras: meal.extras.map((extra) => extra.id === extraId ? {...extra, checked: value} : extra )})
   }
-
-  const checkExtraOnMeal = (event, extraId) => {
-    const value = event.target.checked;
-    const newMeal = {...meal};
-    const extra = newMeal.extras.find((extra) => extra.id === extraId);
-    extra.checked = value;
-
-    setMeal(newMeal)
-}
 
   return (
     <section className="main-details">
@@ -43,15 +33,14 @@ const FoodDetails = () => {
           {meal.extras ? (
             <ul className="details-extra" >
               {meal.extras.map((extra, i) => (
-                <li key={i}>
-                   <input type="checkbox" onChange={(e) => checkExtraOnMeal(e, extra.id)} ></input>
+                <li key={i} className="item-extra">
+                   <input type="checkbox" onChange={(event) => toggleExtraOnMeal(event.target.checked , extra.id)} ></input>
                   <h4>{extra.name}</h4>
                 </li>
-
               ))}
             </ul>
           ) : (
-            <h2>Não há extras para esta refeição</h2>
+            <h2>No extras Available</h2>
           )}
           <Link to="/product-list">
             <button className="add-cart-details" onClick={() => addMealToCart(meal)}>Adicionar</button>
@@ -64,5 +53,3 @@ const FoodDetails = () => {
 };
 
 export default FoodDetails;
-
-
